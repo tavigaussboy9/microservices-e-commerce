@@ -1,6 +1,6 @@
 version: '3.9'
 services:
-  user-service:
+  user_service:
     build:
       context: ./services/user-service
     ports:
@@ -8,7 +8,7 @@ services:
     environment:
       - NODE_ENV=production
 
-  product-service:
+  product_service:
     build:
       context: ./services/product-service
     ports:
@@ -16,7 +16,7 @@ services:
     environment:
       - NODE_ENV=production
 
-  order-service:
+  order_service:
     build:
       context: ./services/order-service
     ports:
@@ -24,7 +24,7 @@ services:
     environment:
       - NODE_ENV=production
 
-  payment-service:
+  payment_service:
     build:
       context: ./services/payment-service
     ports:
