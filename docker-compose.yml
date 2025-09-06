@@ -1,0 +1,25 @@
+version: '3'
+services:
+  user-service:
+    build:
+      context: ./services/user-service
+    ports:
+      - '3001:3001'
+
+  product-service:
+    build:
+      context: ./services/product-service
+    ports:
+      - '3002:3002'
+
+  order-service:
+    build:
+      context: ./services/order-service
+    ports:
+      - '3003:3003'
+
+  payment-service:
+    build:
+      context: ./services/payment-service
+    ports:
+      - '3004:3004'
