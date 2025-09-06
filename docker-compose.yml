@@ -5,21 +5,29 @@ services:
       context: ./services/user-service
     ports:
       - '${USER_SERVICE_PORT:-3001}:${USER_SERVICE_PORT:-3001}'
+    environment:
+      - NODE_ENV=production
 
   product-service:
     build:
       context: ./services/product-service
     ports:
       - '${PRODUCT_SERVICE_PORT:-3002}:${PRODUCT_SERVICE_PORT:-3002}'
+    environment:
+      - NODE_ENV=production
 
   order-service:
     build:
       context: ./services/order-service
     ports:
       - '${ORDER_SERVICE_PORT:-3003}:${ORDER_SERVICE_PORT:-3003}'
+    environment:
+      - NODE_ENV=production
 
   payment-service:
     build:
       context: ./services/payment-service
     ports:
       - '${PAYMENT_SERVICE_PORT:-3004}:${PAYMENT_SERVICE_PORT:-3004}'
+    environment:
+      - NODE_ENV=production
