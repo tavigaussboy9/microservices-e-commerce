@@ -22,4 +22,4 @@ services:
     build:
       context: ./services/payment-service
     ports:
-      - '${PAYMENT_SERVICE_PORT:-3005}:${PAYMENT_SERVICE_PORT:-3005}'
+      - '${PAYMENT_SERVICE_PORT:-3004}:${PAYMENT_SERVICE_PORT:-3004}'
